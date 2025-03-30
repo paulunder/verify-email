@@ -1,0 +1,1028 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: "Montserrat";
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.btn-primary {
+    background-color:#fd7426 ;
+    border-color: #fd7426;
+    color:black;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    border-color: #fd7426;
+    color: #495c5d;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fd7426 !important;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 0.5rem;
+}
+
+.edda-text{
+    font-family: "Montserrat";
+    font-weight: bold;
+    background: linear-gradient(
+            to right, #fd7427, #fd7427,
+             #0F4257, #0F4257);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+#registerbutton{
+    position: relative;
+    z-index: 4;
+
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#registerbutton:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#registerbutton:active {
+  transform: scale(0.95);
+}
+
+.disclaimer-eddalaunch{
+    text-align: center;
+    font-family: "Poppins";
+    background-color: #ff3636;
+    font-size: 1.5em;
+    color: #fff;
+    box-shadow: 0px 0px 20px 20px rgba(73, 92, 93, 0.1);
+
+}
+
+
+.smartphone-pic{
+    height: 90vh;
+    width: auto;
+    padding-top: 10vh;
+
+}
+
+.smartphone-text{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 10%;
+
+}
+
+
+
+.subtext-front{
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #495c5d;
+}
+
+.mainsubtext-front{
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 1rem;
+    font-style: oblique;
+    color: #495c5d;
+}
+
+.maintext-front{
+    font-family: "Poppins";
+    font-weight:bolder;
+    font-size: 3rem;
+    color: #495c5d;
+
+}
+
+#front-site{
+    background-image: linear-gradient(to top, white 0%, #DAE4E6 60%)
+}
+
+
+
+svg{
+    display: inline-block;
+    height: 100%;
+}
+
+.bedda {
+	background-image: url(../imgs/upper_image_newe.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 43%;
+    background-position:center;
+    z-index: 2;
+}
+
+#second-explain-field{
+    max-width: 1400px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 20px rgba(73, 92, 93, 0.1);
+    /*background: #000428; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to bottom, rgba(253, 116, 39, 1), rgba(253, 116, 39, .4)); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to bottom, rgba(253, 116, 39, 1), rgba(253, 116, 39, .4)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.left-explain{
+    padding: 10%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    color: #495c5d;
+    z-index: 2;
+}
+
+.right-explain{
+    padding: 5%;
+
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-style: normal;
+    text-align: left;
+    color: #495c5d;
+    max-width: 70%;
+    border-radius: 6px;
+   /* box-shadow: 2px 2px 2px 1px rgba(73, 92, 93, 0.6);*/
+    z-index: 2;
+    display: inline-block;
+    
+  
+}
+
+#right-explain{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#left-explain{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#rectimation-path{
+    stroke: #fd7427;
+    stroke-width: 15px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: transparent;
+    transition: fill 250ms;
+}
+
+#rectimation{
+    margin-top: 10vh;
+    margin-left:5%;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+}
+
+
+
+#geotag-path{
+    stroke: #fd7427;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: transparent;
+    transition: fill 250ms;
+    top: 0 !important;
+}
+
+#third-explain-field{
+    max-width: 1400px;
+    margin-bottom: 5%;
+    display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+#icon-cards{
+    background-color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 55vh;
+    width: auto;
+    padding: 2%;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 20px rgba(73, 92, 93, 0.1);
+    max-height: 40vh;
+}
+
+#icons-home{
+    display: flex;
+    height: 8rem;
+    width: auto;
+    margin: 4vh;
+}
+
+#website-explain-animation-1{
+    height: 70vh;
+    width: auto;
+}
+
+#website-explain-animation-2{
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+
+
+#st-explain-animation-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-style:normal;
+    font-weight: bold;
+    color:#495c5d;
+}
+
+#st-explain-animation-subtext{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: "Poppins";
+    font-style: normal;
+    color:#495c5d;
+}
+
+@media  screen and (min-width: 1840px){
+
+    .line-container{
+        top: -30% !important;
+    }
+
+    .subtext-front{
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 2.5rem;
+        font-style: italic;
+        color: #495c5d;
+    }
+    
+    .mainsubtext-front{
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 1.5rem;
+        font-style: oblique;
+        color: #495c5d;
+    }
+    
+    .maintext-front{
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 3.5rem;
+        color: #495c5d;
+    }
+
+}
+    
+
+
+@media screen and (min-width:900.1px) {
+
+    .line-container{
+        position:absolute;
+        top: -5%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    .text-in-pic {
+        transform: rotate(-4deg);
+        text-align: center;
+        position: relative;
+        display: block;
+        min-height: 20vh;
+        font-family:"Poppins";
+        font-weight: bold;
+        color: #fff;
+        top: -40px;
+        font-size: 4em;
+    }
+
+
+
+
+    #explain-animation-container{
+        height: 80vh;
+        padding-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+   /* .world-map {
+        background-position: center center;
+        background-image: url(../imgs/world_map.png);
+        background-repeat: no-repeat;
+        background-size: calc(110vw/2)
+    }*/
+}
+
+@media screen and (max-width:900px){
+
+    .line-container{
+        position:absolute;
+        top: 20%;
+        left: -40%;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .smartphone-text{
+        padding-top: 20% !important;
+        padding-bottom: 0% !important;
+        text-align: center;
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    .smartphone-pic{
+        height: auto !important;
+        max-width: 99%;
+        padding-top: 0 !important;
+    }
+
+    .bedda {
+        background-size: 280%;
+        background-position-x: 42%;
+    }
+
+    #st-explain-animation-text{
+        font-size: 1.5rem !important;
+        padding: 5%;
+    }
+
+    #website-explain-animation-1{
+        height: 60vh !important;
+        width: auto;
+    }
+
+    #rectimation{
+        margin-top: 0 !important;
+        margin-left:1% !important;
+        width: 8rem !important;
+        height: 8rem !important;
+    }
+
+    .left-explain{
+        padding: 5% !important;
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .smartphone-image{
+
+        background-size: 30vh !important;
+    }
+
+    #edda-explain{
+        height: 69% !important;
+
+    }
+
+    .row{
+        height: 100%;
+    }
+
+    #explain-animation-container{
+        height: 60vh;
+        padding-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .text-in-pic {
+        transform: rotate(-4deg);
+        text-align: center;
+        position: relative;
+        display: block;
+        font-family:"Poppins";
+        font-weight: bold;
+        color: #fff;
+        top: -40px;
+        font-size: xx-large;
+    }
+
+    .catcher-container {
+        min-height: 85vh !important;
+        }
+
+    .disclaimer-eddalaunch{
+        font-size: 1em !important;
+    }
+
+    #icons-home{
+        margin: 2vh !important;
+    }
+
+    
+    }
+
+#edda-explain{
+    position: relative;
+
+    width: auto;
+    height: 90vh;
+
+
+}
+
+
+
+
+.edda3d {
+	background-image: url(../imgs/edda_3d.jpg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+
+.triangle-topleft {
+    min-height: 14vh;
+    background: linear-gradient(-184deg, #fff 50%, rgba(255, 0, 0, 0) 0%);
+}
+
+.triangle-bottomright {
+    transform: rotate(180deg);
+    min-height: 14vh;
+    margin-bottom: -3vh;
+    background: linear-gradient(-184deg, #fff 50%, rgba(255, 0, 0, 0) 0%);
+}
+
+.triangle-topblue {
+    transform: rotate(180deg);
+    min-height: 14vh;
+    background: linear-gradient(-184deg, #D0DDDE 50%, rgba(255, 0, 0, 0) 0%);
+}
+
+
+
+.image-container {
+    max-height:600px;
+    max-width: 600px;
+    /* overflow:hidden; */
+    position: absolute;
+    margin-left: calc((100vw/4) * -1);
+    /* clip: rect(0px,60px,200px,0px); */
+  }
+
+  #catcher-video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+
+
+
+
+.navbar-brand .brand-img {
+    width: 45px;
+    margin: -0.3125rem 0;
+}
+
+#catcher-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+
+header#home > .container {
+    padding: 20px;
+}
+
+
+
+.contact-form {
+    margin: 10px;
+}
+
+
+
+.form-group {
+    margin: 0.4rem;
+}
+
+#registerform{
+    padding: 10%;
+}
+
+.catcher-container {
+
+min-height: 100vh;
+}
+
+.infos {
+    display: flex;
+
+}
+
+.ti-angle-down {
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+.ti-angle-down:hover {
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    bottom: 3%;
+}
+
+/* edda supporter page */
+
+.headertext{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size:xx-large;
+    margin-top:8vh;
+    padding: 2vh;
+    color: #495c5d;
+    background-color: #fff;
+}
+
+
+#supporter-explain {
+    font-family: "Poppins";
+    padding: 7%;
+    
+}
+
+#left-text{
+    border-left: #495c5d 2px solid;
+}
+
+
+
+
+
+@media screen and (min-width:900.1px) {
+    #supporter-video {
+        width: 100vw;
+        height: 35vh;
+        object-fit: cover;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        z-index: -1;
+    }
+
+    #supporter-explain{
+        padding-top: 33vh;
+    }
+
+    .supporter-button{
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (max-width:900px){
+    #supporter-video {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        z-index: -1;
+    }
+
+    #supporter-explain{
+        padding-top: 18vh;
+    }
+
+    .supporter-button{
+        text-align: center;
+    }
+
+}
+
+
+
+.card {
+    position: relative;
+    /*make width and height 400px to fix the graphic bug of the link buttons in the card details*/
+    width: auto;
+    height: auto;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 65%;/*100%*/
+    height: 100%;
+    background: #fd7427;
+    transition: .5s;
+    transform-origin: bottom;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+
+/* edda supporter werden - page */
+
+.headersubtext{
+    font-family: "Poppins";
+    font-weight:thin;
+    font-size:large;
+    padding: 2vh;
+    color: #495c5d;
+}
+
+#advantages{
+    background-color: #fd7427;
+    font-size: large;
+    font-family: "Poppins";
+    text-align: center;
+    border-radius: 9vw;
+    color: #fff;
+
+    box-shadow: 0 0 0 4px #fff;
+}
+
+.line {
+    padding-top: 2vh;
+    border-bottom: 2px solid #495c5d;
+  }
+
+  .formsubtext{
+      font-family: "Poppins";
+      font-weight:lighter;
+      font-size:xx-large;
+      font-style: italic;
+      margin-top: 3vh;
+      padding: 2vh;
+      color: #495c5d;
+
+  }
+  
+
+  /*behind edda - page*/
+
+  .wrap-layer{
+    position: relative;
+  }
+
+  .wrap-layer2{
+    position: relative;
+    z-index: 4;
+  }
+
+  .background-layer{
+    position: absolute;
+    top: 2vh;
+    z-index: 1;
+    left: 7vh;
+  }
+
+  .background-layer2{
+    position: absolute;
+    top: 60vh;
+    z-index: 1;
+    right: 7vh;
+  }
+
+  .background-layer3{
+    position: absolute;
+    top: 76vh;
+    right: 7vh;
+    z-index: 1;
+  }
+
+
+
+  @media screen and (min-width:900.1px) {
+
+  .block1{
+    background-color: rgba(73, 92, 93, .6);
+      border-color: #fff;
+      border-radius: 5px;
+      border-style: solid;
+      color: #fff;
+      font-family: "Poppins";
+      text-align: left;
+      font-weight: normal;
+      font-size: normal;
+
+      margin-left: 25px;
+      max-width: 40%;
+      max-height: 150px;
+      padding: 10px;
+  }
+
+  #explain-animation-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .peoplepic{
+    background-image: url(../imgs/people.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:absolute;
+    height: 200px;
+    display: flex;
+
+    align-items: center;
+
+}
+
+.europetext{
+    vertical-align: middle;
+    font-family: "Poppins";
+    font-size: larger;
+    font-weight: normal;
+    padding: 2vh;
+    color:#495c5d;
+    margin-right: 50%;
+ 
+}
+
+
+}
+
+@media screen and (max-width:900px){
+
+    .block1{
+        background-color: rgba(73, 92, 93, .6);
+        border-color: #fff;
+        border-radius: 5px;
+        border-style: solid;
+        color: #fff;
+        font-family: "Poppins";
+        text-align: left;
+        font-weight: normal;
+        font-size:small;
+        margin: auto;
+        background-position-y:center; 
+        max-height: 150px;
+        max-width: 90%;
+        padding: 5px;
+
+
+    }
+
+    .peoplepic{
+        background-image: url(../imgs/people.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment:absolute;
+        height: 200px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .europetext{
+        vertical-align: middle;
+        font-family: "Poppins";
+        font-size: larger;
+        font-weight: normal;
+        padding: 2vh;
+        color:#495c5d;
+        margin-right: 20%;
+        margin-top: 30%;
+    }
+
+    .background-layer2{
+        right: 0vh !important;
+        top: 116vh !important;
+      }
+    
+      .background-layer3{
+        right:0vh !important;
+        top: 136vh !important;
+      }
+
+}
+
+#block2{
+    text-align: center center;
+    height:30%;
+    padding:5%;
+    font-family: "Poppins";
+    font-weight: lighter;
+    color: #495c5d;
+
+}
+
+#block3{
+    background-color: #495c5d;
+    color: #fff;
+    font-family: "Montserrat";
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.square{
+    width: 3vw;
+    height: 3vw;
+    background-color: #fd7427;
+    right: 0vw;
+    display: block;
+    position: relative;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+#block4{
+    /*position: center center;*/
+    margin: auto 0 auto 0;
+
+}
+
+#block4text{
+    font-family: "Montserrat";
+    color: #495c5d;
+}
+
+.europe{
+    margin-top: 10px;
+    background-image: url(../imgs/world_map_in_europe.png);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+
+    height: 74vh;
+    
+}
+
+
+.bigger-text {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.behindedda3d{
+    background-image: url(../imgs/edda_3d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30%;
+    background-attachment: fixed;
+
+}
+
+#edda3dleft{
+    font-size: 1.5em;
+    font-family: "Poppins";
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+}
+
+#edda3dright{
+    font-size: 1.1em;
+    font-family: "Poppins";
+    color: #fff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#edda3ddarken{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/*contact - page */
+
+.subtext{
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 2vh;
+    color: #495c5d;
+}
