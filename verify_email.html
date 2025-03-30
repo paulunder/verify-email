@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @media only screen and (min-width: 680px) {
+        .hide-pc {
+            display: none;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="verify email" />
+    <meta name="author" content="Devcrud" />
+    <title>Verifiziere deine Email</title>
+
+    <!-- Latest Bootstrap 5.2 CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <!-- Styles -->
+    <style>
+        #registerbutton {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+            min-width: 230px;
+            max-width: 300px;
+        }
+
+        .parallax-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-container-text {
+            width: 80%;
+            text-align: center;
+            max-width: 550px;
+        }
+
+        .parallax-container-headline {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Appwrite -->
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@11.0.0" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        const { Client, Account } = Appwrite;
+        try {
+            const client = new Client();
+            client
+                .setEndpoint("https://cloud.appwrite.io/v1")
+                .setProject("67486b6f0030cdb9f305");
+
+            const account = new Account(client);
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const userId = urlParams.get("userId");
+            const secret = urlParams.get("secret");
+
+            const promise = account.updateVerification(userId, secret);
+
+            promise.then(
+                function (error) {
+                    console.log(error); // Failure
+                }
+            );
+        } catch (error) {
+            console.log(error); // Error
+        }
+    </script>
+
+    <!-- Deep link -->
+    <script src="js/deep-link.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="verify">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/imgs/wegepaten_no_text_156.png" class="brand-img" />
+            </a>
+        </div>
+    </nav>
+
+    <!--cookie consent popup-->
+    <div class="cookie-consent hide_cookie">
+        <p class="cookie-consent__text">
+            Diese Website verwendet Cookies.
+            <button class="cookie-consent__button">Got it!</button>
+        </p>
+    </div>
+
+    <!-- Background -->
+    <div class="parallax-container">
+        <h1 class="parallax-container-headline">
+            Danke für die verifizierung deiner Email!
+        </h1>
+        <p class="parallax-container-text">
+            Deine Email wurde erfolgreich verifiziert.
+        </p>
+        <p class="parallax-container-text">
+            Du kannst jetzt unsere App
+            öffnen und deine Entdeckungsreise starten. </p>
+        <!-- Deep link button -->
+        <p class="hide-pc">
+            <a class="btn" id="registerbutton" href="wegepaten://launch" data-app="wegepaten://launch">
+                <i>Zur App 🎉</i>
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
